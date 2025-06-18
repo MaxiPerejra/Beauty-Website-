@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="MoonTime-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p class="salon">SALON</p>
+        <p class="nova">Nova Beauty</p>
+    </header>
+    <div class="menu">
+        <a href="cennik">O nas</a>
+        <a href="kadra">Cennik</a>
+        <a href="opinie">Opinie</a>
+        <a href="prace">Nasze prace</a>
+        <a href="kontakt">Kontakt</a>
+    </div>
+    <div class="container">
+      <div class="content-wrapper">
+          <div class="slider-section">
+              <div class="swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie0.jpg" alt="1"></div>
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie1.jpg" alt="1"></div>
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie2.jpg" alt="1"></div>
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie3.jpg" alt="1"></div>
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie4.jpg" alt="1"></div>
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie5.jpg" alt="1"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="photos-group">
+            <div class="photo-section">
+              <div class="photo-box">
+                <img src="zdjecia/koperty.jpg" alt="">
+              </div>
+              <div class="napis1">BEZPIECZEŃSTWO</div>
+            </div>
+            <div class="photo-section2">
+              <div class="napis2">KOMFORT</div>
+              <div class="photo-box">
+                <img src="zdjecia/mama.jpg" alt="">
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 0,
+          effect: 'fade',
+          fadeEffect: { crossFade: true },
+          speed: 1500,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          }
+        });
+      </script>
+</body>
+</html>
