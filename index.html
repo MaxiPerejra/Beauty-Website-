@@ -8,32 +8,39 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preload" href="MoonTime-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Quintessential&display=swap" rel="stylesheet">
 </head>
 <body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Quintessential&display=swap');
+    </style>
+  <section class="glowna">
     <header>
-        <p class="salon">SALON</p>
-        <p class="nova">Nova Beauty</p>
+      <p class="salon">SALON</p>
+      <p class="nova">Nova Beauty</p>
     </header>
     <div class="menu">
-        <a href="cennik">O nas</a>
-        <a href="kadra">Cennik</a>
-        <a href="opinie">Opinie</a>
-        <a href="prace">Nasze prace</a>
-        <a href="kontakt">Kontakt</a>
+      <a href="cennik">Cennik</a>
+      <a href="kadra">Nasza kadra</a>
+      <a href="opinie">Opinie</a>
+      <a href="prace">Nasze prace</a>
+      <a href="kontakt">Kontakt</a>
     </div>
     <div class="container">
       <div class="content-wrapper">
           <div class="slider-section">
               <div class="swiper">
                   <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="zdjecia/zdjecie0.jpg" alt="1"></div>
-                      <div class="swiper-slide"><img src="zdjecia/zdjecie1.jpg" alt="1"></div>
-                      <div class="swiper-slide"><img src="zdjecia/zdjecie2.jpg" alt="1"></div>
-                      <div class="swiper-slide"><img src="zdjecia/zdjecie3.jpg" alt="1"></div>
-                      <div class="swiper-slide"><img src="zdjecia/zdjecie4.jpg" alt="1"></div>
-                      <div class="swiper-slide"><img src="zdjecia/zdjecie5.jpg" alt="1"></div>
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie0.jpg" alt="1" loading="lazy"></div>
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie1.jpg" alt="1" loading="lazy"></div>
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie2.jpg" alt="1" loading="lazy"></div>
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie3.jpg" alt="1" loading="lazy"></div>
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie4.jpg" alt="1" loading="lazy"></div>
+                      <div class="swiper-slide"><img src="zdjecia/zdjecie5.jpg" alt="1" loading="lazy"></div>
                   </div>
               </div>
           </div>
@@ -52,7 +59,48 @@
             </div>
           </div>
       </div>
-  </div>
+    </div>
+  </section>
+  <section class="o-nas">
+    <div class="kolor"></div>
+    <div class="card">
+      <div class="card-content">
+
+        <!-- LEWA KOLUMNA -->
+        <div class="left">
+          <h1 class="name">Ania Kunikowska</h1>
+          <p class="intro">
+            Ania to doświadczona specjalistka i właścicielka naszego salonu – od lat z pasją tworzy miejsce, w którym piękno spotyka się z profesjonalizmem. Zajmuje się:
+          </p>
+          <ul class="services">
+            <li>pielęgnacją twarzy i ciała</li>
+            <li>stylizacją brwi oraz rzęs</li>
+            <li>manicure i pedicure</li>
+          </ul>
+
+          <div class="bottom">
+            <div class="logo">
+              <img src="zdjecia/logo2.png" alt="Nova Beauty">
+            </div>
+            <div class="desc">
+              <p>
+                Dzięki wieloletniej praktyce i niezwykłemu wyczuciu estetyki, każda wizyta u Ani to nie tylko perfekcyjnie wykonany zabieg, ale także chwila wytchnienia od codzienności.
+              </p>
+              <p class="book">
+                Umów się na spotkanie i poznaj Anię osobiście – wierzymy, że zachwyci Cię tak samo, jak nas <span class="heart">❤</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="zdjecia/o-nas.png" alt="Ania Kunikowska" class="photo">
+        </div>
+
+      </div>
+    </div>
+    <div class="kolor"></div>
+
+  </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
@@ -71,3 +119,4 @@
       </script>
 </body>
 </html>
+
