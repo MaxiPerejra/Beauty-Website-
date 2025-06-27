@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Moontime";
+    src: url("fonts/MoonTime-Regular.woff2") format("woff2"),
+         url("fonts/MoonTime-Regular.woff")  format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.card2 {
+    background: #edd9cb;   
+    padding: 3rem 4.5rem;
+    height: 67vh;
+}
+.gora {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+}
+.linia {
+    height: 3px;
+    background-color:rgb(171, 101, 74);
+    width: 40%;
+}
+h3 {
+    font-family:"Cormorant Garamond", serif;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+.main-content {
+    background: linear-gradient(
+        180deg,
+        #edd9cb,
+        rgba(255, 138, 154, 0.43),
+        #edd9cb);
+    height: 30vh;
+    overflow: hidden;   
+    position: relative;
+}
+.opinnion-list{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    align-items: center;
+    display: flex;    
+}
+.inner{
+    display: flex;
+    gap: 3rem;
+    animation: loop 30s linear infinite;
+    align-items: center; 
+    height: 100%;
+}
+.tag {
+    width: 15rem;
+    height: 15rem;
+    flex-shrink: 0;
+}
+.tag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    justify-items: center;
+    align-items: center;
+}
+.social-media {
+    grid-row: span 2 / span 2;
+}
+.czcionka {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.social {
+    font-family: "Moontime", serif;
+    font-size: 4rem;
+    text-align: end;
+    margin-top: -1.2rem;
+    color: rgb(171, 101, 74);
+}
+.facebook {
+    grid-row: span 2 / span 2;
+    
+
+}
+.facebook img {
+    width: 5rem;
+    height: 5rem;
+
+}
+.insta {
+    grid-row: span 2 / span 2;
+
+}
+.insta img {
+    width: 9rem;
+    height: 9rem;
+
+}
+.facebook,
+.insta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;           
+}
+.footer > .insta {
+    margin-left: -120%; 
+}
+
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.cormorant-garamond-400 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}

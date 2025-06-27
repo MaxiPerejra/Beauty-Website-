@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Moontime";
+    src: url("fonts/MoonTime-Regular.woff2") format("woff2"),
+         url("fonts/MoonTime-Regular.woff")  format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "AlexBrush";
+    src: url("fonts/AlexBrush-Regular.woff") format("woff");
+    font-weight: lighter;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.card-content2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 2rem;
+    align-items: center;
+    height: 100%;
+    padding: 2rem 8rem;  
+}
+.lewo2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4; 
+}
+.lewo2 img {
+    width: 100%;
+    height: auto;;
+    border-radius: 16px;
+    object-fit: cover;
+    display: block;
+}
+.name2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-self: start;
+    font-family: "Alex Brush", cursive;
+    font-size: 4rem;
+    color: black;
+    padding-top: 2.5rem;
+}
+.srodek{
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+.intro2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.45rem;
+    line-height: 1.6;
+    padding: 0 2rem;    
+}
+.services2 {
+    font-family: "Cormorant Garamond", serif;
+    color: black;
+    list-style-type: disc;
+    margin-bottom: 40px;
+    width: 80%;
+}
+.services2 li {
+    margin-bottom: 0.7rem;
+    font-size: 1.3rem;
+    margin-left: 4rem;
+
+}
+.desc2 p{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.45rem;
+    line-height: 1.6;
+    padding: 0 2rem;  
+    text-align: center;  
+}
+.book2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.bottom2 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    justify-self: end;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.quintessential-regular {
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.cormorant-garamond-400 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.alex-brush-regular {
+    font-family: "Alex Brush", cursive;
+    font-weight: lighter;
+    font-style: normal;
+}

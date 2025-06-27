@@ -1,0 +1,42 @@
+.cormorant-garamond-400 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.tlo{
+    background: url('zdjecia/bezpieczenstwo/bezpieczenstwo.png') no-repeat center center;
+    background-size: cover;
+  
+    background-attachment: fixed;
+  
+
+    padding: 100px 0;
+    position: relative; 
+    overflow: hidden;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tlo .content {
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+.tlo h1 {
+    font-family: "cormorant-garamond-400", serif;
+    font-size: 4rem;
+}
+.tlo h2 {
+    font-family: "cormorant-garamond-400", serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.tlo p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    line-height: 1.6;
+}
