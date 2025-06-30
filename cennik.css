@@ -1,0 +1,92 @@
+.kolor {
+    background: linear-gradient(
+        180deg,
+        rgb(255, 255, 255),
+        rgba(255, 138, 154, 0.43),
+        rgb(189, 156, 140));
+    height: 100vh;
+}
+
+.container-cennik {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 40px;
+    padding: 30px 15px;
+    width: 100%;
+
+}
+.lewo img {
+    width: 400px;
+    height: 50%;
+    border-radius: 20%;
+}
+.prawo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 18px;
+    font-family: "Cormorant Garamond", serif;
+}
+.zapytanie {
+    font-size: 1.8rem;
+}
+.malutki {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.vouchery {
+    font-size: 1.2rem;
+}
+.pogrubione {
+    font-weight: 600;
+}
+.mozliwosci {
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    margin-top: -0.5rem;
+}
+.prezent {
+    font-size: 1.2rem;
+    text-align: center; 
+};
+.container2-cennik {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.napis {
+    font-size: 10rem;
+    font-family: "Moontime", serif;
+    text-align: center;
+    margin-top: 1rem;
+    color: rgb(171, 101, 74);;
+}
+
+
+
+
+.cormorant-garamond-400 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.quintessential-regular {
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Moontime";
+    src: url("fonts/MoonTime-Regular.woff2") format("woff2"),
+         url("fonts/MoonTime-Regular.woff")  format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
