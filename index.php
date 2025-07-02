@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="opinie.css">
     <link rel="stylesheet" href="kontakt.css">
     <link rel="stylesheet" href="stopka.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="shortcut icon" href="zdjecia/o-nas/logo2.png" type="image/png">
+    
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -26,6 +29,7 @@
 <body>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Quintessential&display=swap');
+
     </style>
 
                                                        <!-- Sekcja główna -->
@@ -51,7 +55,7 @@
       <a href="#opinie">Opinie</a>
       <a href="#opinie">Nasze prace</a>
       <a href="#kontakt">Kontakt</a>
-      <a href="#cennik">Cennik</a>
+      <a href="/cennik.html">Cennik</a>
     </div>
     <div class="container">
       <div class="content-wrapper">
@@ -228,7 +232,7 @@
                 <path d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L 22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C 31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903 27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L 26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562 5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C 29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C 21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z"></path>
                 </svg>
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61570829528121&locale=pl_PL">Nova Beauty</a>
+            <a href="https://www.facebook.com/profile.php?id=61570829528121&locale=pl_PL" rel="noopener noreferrer" target="_blank">Nova Beauty</a>
           </div>
           <div class="insta">
             <a href="https://www.instagram.com/nova_beauty_reda/" target="_blank" rel="noopener noreferrer">
@@ -258,9 +262,9 @@
             loading="lazy">
           </iframe>
         </div>
-
+        
         <div class="kontakt-form">
-          <form class="formularz" action="send.php" method="post" id="contactForm">
+          <form class="formularz" action="send.php" method="post" id="contactForm" id="formMessage">
             <div class="napisy">
               <p class="pytanie">Masz pytania?</p>
               <p class="mniejszy-napis">Skontaktuj się z nami!</p>
@@ -273,7 +277,7 @@
             pattern="^\+?[0-9\s\-]{7,15}$"
             inputmode="tel"
             required>
-            <input type="email" name="name" placeholder="E-mail" required>
+            <input type="email" name="email" placeholder="E-mail" required>
             <textarea name="message" placeholder="Wiadomość" required></textarea>
             <button type="submit" class="przycisk2">Wyślij</button>
           </form>
@@ -329,7 +333,7 @@
             <a href="#glowna" class="grube">Strona główna</a>
             <a href="#kontakt">Kontakt</a>
             <a href="#o-nas">O nas</a>
-            <a href="">Cennik</a>
+            <a href="/cennik.html">Cennik</a>
             <a href="#opinie">Opinie</a>
           </div>
         </div>
@@ -339,7 +343,7 @@
     <div class="prawa-autorskie">
       <p>
         © 2025 Nova Beauty · Wszelkie prawa zastrzeżone · Autor: Maksymilian Kunikowski · 
-        <a href="/polityka-prywatnosci">Polityka prywatności</a>
+        <a href="/polityka-prywatnosci.html">Polityka prywatności</a>
       </p>
     </div>
   </section>
@@ -359,17 +363,38 @@
           }
         });
     </script>
-    <script>
-      document.getElementById("contactForm").addEventListener("submit", async e => {
-        e.preventDefault();
-        const data = Object.fromEntries(new FormData(e.target).entries());
-        await fetch("/.netlify/functions/send", {
-          method: "POST",
-          body: JSON.stringify(data),
-        });
-        alert("Wysłano!");
+    <script defer>
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
+  const btn  = form.querySelector('button[type=submit]');
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+
+    btn.disabled     = true;             
+    const original   = btn.textContent;   
+    btn.textContent  = 'Wysyłanie…';      
+    try {
+      const resp = await fetch(form.action, {
+        method: form.method,
+        body:   new FormData(form)
       });
-    </script>
+      if (resp.ok) {
+        form.reset();                     
+      } else {
+        console.error('Błąd serwera:', await resp.text());
+      }
+    } catch (err) {
+      console.error('Fetch error:', err);
+    } finally {
+      btn.disabled    = false;           
+      btn.textContent = original;        
+    }
+  });
+});
+</script>
+
+
     
 
 </body>
